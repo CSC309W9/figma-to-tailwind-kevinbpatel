@@ -1,14 +1,6 @@
 // utorid: pate1452
-
 // app/page.js
 import React from "react";
-
-// Reusable Text Component
-const TextElement = ({ text, className, style }) => (
-  <div className={`absolute text-[#eaecd7] ${className}`} style={style}>
-    {text}
-  </div>
-);
 
 export default function Home() {
   return (
@@ -21,12 +13,11 @@ export default function Home() {
         </div>
       </div>
 
-      {/* Coffee Image Container */}
+      {/* Coffee Image Container - without mask */}
       <div className="origin-top-left rotate-[-8.64deg] w-[543px] h-[590px] absolute right-[100px] top-[226px]">
-        <div className="w-full h-full bg-[#d9d9d9]" />
         <img
-          className="w-[631px] h-[1055px] absolute left-[81px] top-[-58px]"
-          src="https://placehold.co/631x1055"
+          className="w-[631px] h-[1055px] absolute"
+          src="/images/images.jpeg"
           alt="Coffee shop"
         />
       </div>
